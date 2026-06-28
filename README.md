@@ -1,18 +1,104 @@
-## Getting Started
+# DSA (Data Structures & Algorithms)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This repository contains my solutions for the **Data Structures & Algorithms (DSA)** programming assignment. All solutions are implemented in **Java** using **Visual Studio Code**.
 
-## Folder Structure
+Each problem has two implementations:
 
-The workspace contains two folders by default, where:
+* **Brute Force** – A straightforward approach focusing on correctness.
+* **Optimal** – An improved solution with better time and/or space complexity.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+---
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Repository Structure
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```text
+dsa/
+├── src/
+│   ├── arrays_strings/
+│   ├── hash_tables/
+│   ├── two_pointers/
+│   ├── binary_trees/
+│   ├── linked_lists/
+│   └── heaps/
+├── bin/
+└── README.md
+```
 
-## Dependency Management
+Each topic folder contains:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* `brute/` – Brute force solutions
+* `optimal/` – Optimal solutions
+
+---
+
+## Topics Covered
+
+* Arrays & Strings
+* Hash Tables
+* Two Pointers
+* Binary Trees
+* Linked Lists
+* Heaps (Priority Queues)
+
+---
+
+## Project Goals
+
+* Practice solving common DSA interview problems.
+* Compare brute force and optimal approaches.
+* Analyze time and space complexity.
+* Improve Java programming skills.
+* Maintain clean Git history using meaningful commits.
+
+---
+
+## Technologies Used
+
+* Java
+* Visual Studio Code
+* Git
+* GitHub
+
+---
+
+## How to Run
+
+Compile a Java file:
+
+```bash
+javac src/<package>/<folder>/<FileName>.java
+```
+
+Run a Java file:
+
+```bash
+java -cp src <package>.<folder>.<FileName>
+```
+
+Example:
+
+```bash
+javac src/arrays_strings/brute/FindClosestNumberToZeroBrute.java
+
+java -cp src arrays_strings.brute.FindClosestNumberToZeroBrute
+```
+
+---
+
+## Assignment Information
+
+* Language: Java
+* IDE: Visual Studio Code
+* Version Control: Git & GitHub
+
+Every solution includes:
+
+* Brute Force implementation
+* Optimal implementation
+* Sample test case
+* Time Complexity
+* Space Complexity
+
+---
+
+**M.Khuzaim  - 0029**
