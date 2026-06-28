@@ -1,5 +1,40 @@
 package hash_tables.optimal;
 
+/*
+Problem: Maximum Number of Balloons
+
+Optimal Approach:
+Count the required characters and
+find the minimum possible number
+of complete "balloon" words.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+
 public class MaximumNumberOfBalloonsOptimal {
-    
+
+    public static int maxNumberOfBalloons(String text) {
+
+        int[] count = new int[26];
+
+        for (char c : text.toCharArray()) {
+            count[c - 'a']++;
+        }
+
+        return Math.min(
+                Math.min(count['b' - 'a'], count['a' - 'a']),
+                Math.min(
+                        Math.min(count['l' - 'a'] / 2, count['o' - 'a'] / 2),
+                        count['n' - 'a']
+                )
+        );
+    }
+
+    public static void main(String[] args) {
+
+        String text = "loonbalxballpoon";
+
+        System.out.println(maxNumberOfBalloons(text));
+    }
 }
